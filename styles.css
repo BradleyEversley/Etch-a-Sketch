@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.board{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.board > div {
+    border: 1px solid black;
+    flex: 1 0 calc(100% / 16);
+    height: calc(100% / 16); 
+}
+
+.buttons {
+    margin: 10px;
+}
